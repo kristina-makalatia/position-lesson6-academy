@@ -1,0 +1,134 @@
+body {
+	height: 1800px;
+	padding-top: 96px;
+}
+/*header*/
+.logo {
+	float: left;
+}
+.navigation {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.nav-li {
+	float: left;
+}
+.nav-ul::after {
+	content: '';
+	clear: left;
+	display: block;
+}
+header {
+	background-color: grey;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+}
+/*.section-one {
+	margin-top: 96px;
+}*/
+
+/*chat-icon*/
+.chat-icon {
+	position: fixed;
+	right:50px;
+	bottom: 0;
+}
+.chat-icon img {
+	height: 80px;
+}
+
+/*Position-absolute*/
+.box-wraper {
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	position: relative;
+}
+.box {
+	width: 150px;
+	height: 150px;
+	background-color: lightblue;
+	position: absolute;
+	right:0;
+	bottom: 0;
+	z-index: 2;
+}
+.box2 {
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	position: absolute;
+	top: 180px;
+	right: 80px;
+	z-index: 3;
+}
+.test {
+	color: #fff;
+	position: absolute;
+	right: 0;
+	bottom:0;
+}
+
+/*Postion-sticky*/
+.section-p {
+	font-size: 40px;
+}
+.sticky {
+	position: sticky;
+	top: 96px;
+	background: orange;
+}
+
+.text-image {
+	position: absolute;
+	bottom:50px;
+	right: 100px;
+	color: red;
+}
+.image-wraper {
+	position: relative;
+	width: 546px;
+}
+.chat-image {
+	position: absolute;
+	top: 150px;
+	left:200px;
+	height: 70px;
+}
+.wraper {
+	width: 400px;
+	height: 400px;
+	background-color: aqua;
+	position: relative;
+}
+.wraper-center {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+/*Backgroudn image*/
+.bg-image {
+	background-image: url('../img/photographer.jpg');
+	height: 500px;
+	width: 900px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+	position: relative;
+}
+.bg-text {
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	color:#fff;
+	font-size: 30px;
+}
